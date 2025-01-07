@@ -16,13 +16,8 @@ import os
 # from unipath import Path
 # import dj_database_url
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# PROJECT_DIR = Path(__file__).parent
-# TEMPLATE_DIR = os.path.join(BASE_DIR, "core/templates")
-TEMPLATE_DIR = BASE_DIR / "next_referral/core" / "templates"
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_DIR = Path(__file__).parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
@@ -58,6 +53,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'next_referral.urls'
 # TEMPLATE_DIR = os.path.join(BASE_DIR, "core/templates")
+TEMPLATE_DIR = os.path.join(BASE_DIR, "core/templates")
 
 TEMPLATES = [
     {
@@ -83,8 +79,12 @@ WSGI_APPLICATION = 'next_referral.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'next_ref_main',
+        'USER': 'root',
+        'PASSWORD': 'shiv125',
+        'HOST':'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -125,7 +125,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (
-    BASE_DIR / "next_referral/core/static",
+    os.path.join(BASE_DIR, 'core/static'),
 )
 
 # Default primary key field type
