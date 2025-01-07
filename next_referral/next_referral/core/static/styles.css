@@ -1,0 +1,69 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background: linear-gradient(45deg, #a8e6cf, #dcedc1); /* Light green gradient */
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.coming-soon {
+    font-family: 'Pacifico', cursive; /* Stylish font */
+    font-size: 3rem; /* Adjust size as needed */
+    color: #4CAF50; /* Green color */
+    margin-bottom: 20px; /* Space below the header */
+    text-align: center; /* Center text */
+}
+
+.content {
+    text-align: center;
+    color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bulb {
+    position: absolute;
+    top: 20px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+    background-image: url('https://img.icons8.com/ios-filled/100/000000/light-on.png'); /* Bulb icon */
+    background-size: cover;
+    animation: bulbAnimation 1s infinite alternate;
+}
+
+@keyframes bulbAnimation {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.get-ready {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.btn {
+    margin-top: 10px;
+}

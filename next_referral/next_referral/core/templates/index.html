@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextReferral</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles.css"> <!-- Link to the external CSS file -->
+
+</head>
+<body>
+    <h1 class="coming-soon">Coming Soon</h1>
+<div class="content">    
+    <h1>Welcome to NextReferral</h1>
+    <div class="timer" id="timer"></div>
+    <button class="btn btn-primary" id="startTimer">Start Timer</button>
+    <button class="btn btn-danger" id="resetTimer">Reset Timer</button>
+    <div class="get-ready">Get Ready for Your Next Job</div>
+    
+</div>
+
+<!-- JavaScript -->
+<script>
+    function updateCurrentTime() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        document.getElementById('timer').textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    // Update the time every second
+    setInterval(updateCurrentTime, 1000);
+    updateCurrentTime(); // Initial call to display time immediately
+
+    let timerInterval;
+    let totalSeconds = 0;
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timerInterval = setInterval(() => {
+            totalSeconds++;
+            updateTimerDisplay();
+        }, 1000);
+    }
+
+    function resetTimer() {
+        clearInterval(timerInterval);
+        totalSeconds = 0;
+        updateTimerDisplay();
+    }
+
+    function updateTimerDisplay() {
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        document.getElementById('timer').textContent = 
+            String(hours).padStart(2, '0') + ':' + 
+            String(minutes).padStart(2, '0') + ':' + 
+            String(seconds).padStart(2, '0');
+    }
+
+    document.getElementById('startTimer').addEventListener('click', startTimer);
+    document.getElementById('resetTimer').addEventListener('click', resetTimer);
+</script>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
