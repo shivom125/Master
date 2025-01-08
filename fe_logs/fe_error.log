@@ -1,0 +1,53 @@
+[2025-01-07 15:31:29 +0000] [26298] [INFO] Starting gunicorn 23.0.0
+[2025-01-07 15:31:29 +0000] [26298] [INFO] Listening at: unix:/run/gunicorn.sock (26298)
+[2025-01-07 15:31:29 +0000] [26298] [INFO] Using worker: sync
+[2025-01-07 15:31:29 +0000] [26301] [INFO] Booting worker with pid: 26301
+[2025-01-07 15:31:29 +0000] [26302] [INFO] Booting worker with pid: 26302
+[2025-01-07 15:31:29 +0000] [26303] [INFO] Booting worker with pid: 26303
+[2025-01-07 15:32:12 +0000] [26298] [INFO] Handling signal: term
+[2025-01-07 15:32:12 +0000] [26301] [INFO] Worker exiting (pid: 26301)
+[2025-01-07 15:32:12 +0000] [26302] [INFO] Worker exiting (pid: 26302)
+[2025-01-07 15:32:12 +0000] [26303] [INFO] Worker exiting (pid: 26303)
+[2025-01-07 15:32:12 +0000] [26298] [INFO] Shutting down: Master
+[2025-01-07 15:32:12 +0000] [26319] [INFO] Starting gunicorn 23.0.0
+[2025-01-07 15:32:12 +0000] [26319] [INFO] Listening at: unix:/run/gunicorn.sock (26319)
+[2025-01-07 15:32:12 +0000] [26319] [INFO] Using worker: sync
+[2025-01-07 15:32:12 +0000] [26322] [INFO] Booting worker with pid: 26322
+[2025-01-07 15:32:12 +0000] [26323] [INFO] Booting worker with pid: 26323
+[2025-01-07 15:32:12 +0000] [26324] [INFO] Booting worker with pid: 26324
+[2025-01-07 16:56:00 +0000] [26319] [INFO] Handling signal: term
+[2025-01-07 16:56:00 +0000] [26322] [INFO] Worker exiting (pid: 26322)
+[2025-01-07 16:56:00 +0000] [26323] [INFO] Worker exiting (pid: 26323)
+[2025-01-07 16:56:00 +0000] [26324] [INFO] Worker exiting (pid: 26324)
+[2025-01-07 16:56:01 +0000] [26319] [INFO] Shutting down: Master
+[2025-01-07 16:56:01 +0000] [27485] [INFO] Starting gunicorn 23.0.0
+[2025-01-07 16:56:01 +0000] [27485] [INFO] Listening at: unix:/run/gunicorn.sock (27485)
+[2025-01-07 16:56:01 +0000] [27485] [INFO] Using worker: sync
+[2025-01-07 16:56:01 +0000] [27488] [INFO] Booting worker with pid: 27488
+[2025-01-07 16:56:01 +0000] [27489] [INFO] Booting worker with pid: 27489
+[2025-01-07 16:56:01 +0000] [27490] [INFO] Booting worker with pid: 27490
+[2025-01-07 17:04:52 +0000] [27485] [INFO] Handling signal: term
+[2025-01-07 17:04:52 +0000] [27488] [INFO] Worker exiting (pid: 27488)
+[2025-01-07 17:04:52 +0000] [27489] [INFO] Worker exiting (pid: 27489)
+[2025-01-07 17:04:52 +0000] [27490] [INFO] Worker exiting (pid: 27490)
+[2025-01-07 17:04:52 +0000] [27485] [INFO] Shutting down: Master
+[2025-01-07 17:04:52 +0000] [27778] [INFO] Starting gunicorn 23.0.0
+[2025-01-07 17:04:52 +0000] [27778] [INFO] Listening at: unix:/run/gunicorn.sock (27778)
+[2025-01-07 17:04:52 +0000] [27778] [INFO] Using worker: sync
+[2025-01-07 17:04:52 +0000] [27781] [INFO] Booting worker with pid: 27781
+[2025-01-07 17:04:52 +0000] [27782] [INFO] Booting worker with pid: 27782
+[2025-01-07 17:04:52 +0000] [27783] [INFO] Booting worker with pid: 27783
+[2025-01-07 18:05:02 +0000] [27778] [INFO] Handling signal: term
+[2025-01-07 18:05:02 +0000] [27781] [INFO] Worker exiting (pid: 27781)
+[2025-01-07 18:05:02 +0000] [27782] [INFO] Worker exiting (pid: 27782)
+[2025-01-07 18:05:02 +0000] [27783] [INFO] Worker exiting (pid: 27783)
+[2025-01-07 18:05:02 +0000] [27778] [ERROR] Worker (pid:27781) was sent SIGTERM!
+[2025-01-07 18:05:02 +0000] [27778] [ERROR] Worker (pid:27782) was sent SIGTERM!
+[2025-01-07 18:05:02 +0000] [27778] [ERROR] Worker (pid:27783) was sent SIGTERM!
+[2025-01-07 18:05:02 +0000] [27778] [INFO] Shutting down: Master
+[2025-01-08 06:14:47 +0000] [2963] [INFO] Starting gunicorn 23.0.0
+[2025-01-08 06:14:47 +0000] [2963] [INFO] Listening at: unix:/run/gunicorn.sock (2963)
+[2025-01-08 06:14:47 +0000] [2963] [INFO] Using worker: sync
+[2025-01-08 06:14:47 +0000] [3004] [INFO] Booting worker with pid: 3004
+[2025-01-08 06:14:47 +0000] [3008] [INFO] Booting worker with pid: 3008
+[2025-01-08 06:14:47 +0000] [3009] [INFO] Booting worker with pid: 3009

@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-dpf95rh7wx7+u7yzeo6oqsiwdux=g8lzs40&4&%_&f@6v@0%pb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['54.158.31.148', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -53,7 +53,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'next_referral.urls'
 # TEMPLATE_DIR = os.path.join(BASE_DIR, "core/templates")
-TEMPLATE_DIR = os.path.join(BASE_DIR, "core/templates")
+TEMPLATE_DIR = os.path.join(BASE_DIR, "next_referral/core/templates")
 
 TEMPLATES = [
     {
@@ -81,7 +81,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'next_ref_main',
-        'USER': 'root',
+        'USER': 'postgres',
         'PASSWORD': 'shiv125',
         'HOST':'localhost',
         'PORT': '5432',
@@ -125,7 +125,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'core/static'),
+    os.path.join(BASE_DIR, 'next_referral/core/static'),
 )
 
 # Default primary key field type
